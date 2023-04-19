@@ -1,5 +1,5 @@
 <h2>Products</h2>
-
+<!-- *ngFor is a structure directive for repeating -->
 <div *ngFor="let product of products">
 
   <h3>  
@@ -7,16 +7,14 @@
       {{ product.name }}
     </a>
   </h3> 
-  <p *ngIf="product.description">
+  <!-- *ngIF is a structure directive for Condition -->
     Description: {{ product.description }}
   </p>
-  
+  <!-- binding click event with Share method in app.component.ts -->
   <button type="button" (click)="share()">
     Share
   </button>
 </div>
-
-
 
 <!-- 
 Copyright Google LLC. All Rights Reserved.
